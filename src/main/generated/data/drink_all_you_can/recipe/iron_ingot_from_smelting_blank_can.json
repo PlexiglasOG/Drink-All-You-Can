@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 51,
+  "experience": 0.05,
+  "group": "iron_ingot_from_blank_can",
+  "ingredient": "drink_all_you_can:blank_can",
+  "result": {
+    "id": "minecraft:iron_ingot"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "drink_all_you_can",
+  "version": "1.0-SNAPSHOT",
+  "name": "Drink All You Can",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/drink_all_you_can/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "io.github.plexiglasog.drink_all_you_can.client.Drink_all_you_canDataGenerator"
+    ],
+    "client": [
+      "io.github.plexiglasog.drink_all_you_can.client.Drink_all_you_canClient"
+    ],
+    "main": [
+      "io.github.plexiglasog.drink_all_you_can.Drink_all_you_can"
+    ]
+  },
+  "mixins": [
+    "drink_all_you_can.mixins.json",
+    {
+      "config": "drink_all_you_can.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "fabric": "*",
+    "minecraft": "1.21.8"
+  }
+}
