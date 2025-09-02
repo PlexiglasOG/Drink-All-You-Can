@@ -1,0 +1,9 @@
+// 1.21.8	-999999999-01-01T00:00:00	Drink All You Can/Drink_all_you_canRecipeProvider
+689e452a1ad8df9bcf6129479854f3966b3c55fb data/drink_all_you_can/advancement/recipes/food/coca_cola_can.json
+493e67cf7ab8f2a15d8b302ccb0e2f3d1447c8c9 data/drink_all_you_can/advancement/recipes/food/red_cow_can.json
+5407784c1c68b58c15dcfddebbfdef42e7766947 data/drink_all_you_can/advancement/recipes/misc/blank_can.json
+476afe4b24f537b491719acd8d32f2725a5a412f data/drink_all_you_can/advancement/recipes/misc/iron_ingot_from_smelting_blank_can.json
+943e1d2876dc1900317e5fb33e7610ed57f8987c data/drink_all_you_can/recipe/blank_can.json
+1e2131fcf7182d690682ecf593761b738f59043b data/drink_all_you_can/recipe/coca_cola_can.json
+a1f8f96d8430f017ac0f2c3ae6db6b4747602b05 data/drink_all_you_can/recipe/iron_ingot_from_smelting_blank_can.json
+1e28ddf3eb0e375058b3a7a3aa3b5e8133c5e18f data/drink_all_you_can/recipe/red_cow_can.json

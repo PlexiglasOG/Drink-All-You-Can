@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": "minecraft:iron_block",
+    "s": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "s",
+    "f",
+    "s"
+  ],
+  "result": {
+    "count": 8,
+    "id": "drink_all_you_can:blank_can"
+  }
+}
