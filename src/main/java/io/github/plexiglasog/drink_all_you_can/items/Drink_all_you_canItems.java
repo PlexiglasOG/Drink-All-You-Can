@@ -1,6 +1,7 @@
 package io.github.plexiglasog.drink_all_you_can.items;
 
 import io.github.plexiglasog.drink_all_you_can.Drink_all_you_can;
+import io.github.plexiglasog.drink_all_you_can.effect.Drink_all_you_canEffects;
 import io.github.plexiglasog.drink_all_you_can.items.custom.CanItem;
 import net.minecraft.component.type.ConsumableComponents;
 import net.minecraft.component.type.FoodComponent;
@@ -27,8 +28,9 @@ public class Drink_all_you_canItems {
                             .build(),
                     ConsumableComponents.food()
                             .sound(SoundEvents.ENTITY_GENERIC_DRINK)
-                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20*15, 4),1.0F))
-                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20*20, 4),1.0F))
+                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(Drink_all_you_canEffects.RED_COW_ENERGY_EFFECT, 20*4, 0), 1.0F))
+                            //.consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20*15, 4),1.0F))
+                            //.consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20*20, 4),1.0F))
                             .build()
             )
     );

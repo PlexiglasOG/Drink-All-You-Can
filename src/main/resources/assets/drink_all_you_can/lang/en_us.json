@@ -1,8 +1,9 @@
 {
-  "item.drink_all_you_can.red_cow_can": "Red Cow Can",
+  "item.drink_all_you_can.red_cow_can": "Red Cow Energy Drink",
   "item.drink_all_you_can.coca_cola_can": "Coca Cola Can",
   "item.drink_all_you_can.blank_can": "Blank Can",
 
+  "effect.drink_all_you_can.red_cow_energy_effect": "Red Cow Energy",
 
   "itemGroup.drink_all_you_can.drink_all_you_can_item_group": "Drink All You Can"
 }
