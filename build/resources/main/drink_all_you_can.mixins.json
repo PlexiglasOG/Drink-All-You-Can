@@ -4,7 +4,7 @@
   "package": "io.github.plexiglasog.drink_all_you_can.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "LivingEntityMixin"
+    "LivingEntityRedCowEnergyEffectMixin"
   ],
   "injectors": {
     "defaultRequire": 1
