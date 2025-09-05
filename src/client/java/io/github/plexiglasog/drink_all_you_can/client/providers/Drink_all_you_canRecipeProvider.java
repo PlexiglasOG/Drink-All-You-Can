@@ -46,16 +46,15 @@ public class Drink_all_you_canRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter);
                 //Coca Cola Can
                 createShaped(RecipeCategory.FOOD, Drink_all_you_canItems.SMOKER_COLA_CAN)
-                        .pattern("sde")
+                        .pattern("sds")
                         .pattern("aba")
-                        .pattern("efs")
+                        .pattern("sfs")
                         .input('s',Items.RED_DYE)
-                        .input('e',Items.WHITE_DYE)
-                        .input('d',Items.BLAZE_POWDER)
+                        .input('d',Items.SMOKER)
                         .input('f',Items.SUGAR)
-                        .input('a', Items.NETHER_WART)
+                        .input('a', Items.CHARCOAL)
                         .input('b', Drink_all_you_canItems.BLANK_CAN)
-                        .criterion(hasItem(Items.NETHER_WART), conditionsFromItem(Drink_all_you_canItems.BLANK_CAN))
+                        .criterion(hasItem(Items.SMOKER), conditionsFromItem(Drink_all_you_canItems.BLANK_CAN))
                         .offerTo(exporter);
 
                 //Smelting
