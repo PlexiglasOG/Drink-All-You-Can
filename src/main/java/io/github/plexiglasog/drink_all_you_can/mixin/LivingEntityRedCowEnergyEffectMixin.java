@@ -20,7 +20,7 @@ public class LivingEntityRedCowEnergyEffectMixin {
         if (self.hasStatusEffect(Drink_all_you_canEffects.RED_COW_ENERGY_EFFECT)) {
             int amplifier = Objects.requireNonNull(self.getStatusEffect(Drink_all_you_canEffects.RED_COW_ENERGY_EFFECT)).getAmplifier();
             //Make the modifier smaller based on amplifier
-            double modifier = amplifier == 0 ? 0.4: 0.3/amplifier;//We can't divide by 0
+            double modifier = amplifier == 0 ? 0.4: 0.39/amplifier;//We can't divide by 0
             //We want to stop it affecting gravity at some point
             if(modifier < 0.09){ //Max is 9% of gravity
                 return original * 0.09;
