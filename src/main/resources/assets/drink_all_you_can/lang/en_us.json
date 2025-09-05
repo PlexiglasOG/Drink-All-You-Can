@@ -4,6 +4,7 @@
   "item.drink_all_you_can.blank_can": "Blank Can",
 
   "effect.drink_all_you_can.red_cow_energy_effect": "Red Cow Energy",
+  "effect.drink_all_you_can.red_cow_energy_gold_effect": "Red Cow Energy Gold",
 
   "itemGroup.drink_all_you_can.drink_all_you_can_item_group": "Drink All You Can"
 }
