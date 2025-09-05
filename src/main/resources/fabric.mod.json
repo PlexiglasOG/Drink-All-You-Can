@@ -6,7 +6,7 @@
   "description": "",
   "authors": [],
   "contact": {},
-  "license": "All Rights Reserved",
+  "license": "MIT/ARR",
   "icon": "assets/drink_all_you_can/icon.png",
   "environment": "client",
   "entrypoints": {
