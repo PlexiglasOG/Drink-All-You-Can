@@ -1,11 +1,53 @@
-All Rights Reserved
-
 Copyright (c) 2025 PlexiglasOG
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+========================
+Code License (MIT)
+========================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software's source code and associated documentation files (the "Code"),
+to deal in the Code without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Code, and to permit persons to whom the Code is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Code.
+
+THE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+OUT OF OR IN CONNECTION WITH THE CODE OR THE USE OR OTHER DEALINGS IN THE CODE.
+
+========================
+Asset License (All Rights Reserved)
+========================
+
+All non-code assets included with this project (including but not limited to
+textures, models, sounds, music, logos, and artwork) are the exclusive property
+of the copyright holder. 
+
+You may:
+- Download this mod only from the official sources authorized by the copyright holder.
+- Use this mod in modpacks, provided you do not redistribute the mod files directly and instead link to the official download page.
+- Create and share videos, streams, or other content that features this mod, provided proper attribution is given.
+- Use this mod for personal, non-commercial gameplay.
+
+You may not:
+- Reupload, redistribute, or host this mod on any platform other than the official sources authorized by the copyright holder.
+- Sell, rent, or otherwise monetize the distribution of this mod.
+- Extract, reuse, or redistribute the assets outside of this mod without explicit permission.
+
+========================
+Disclaimer
+========================
+
+THE SOFTWARE AND ASSETS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE, ASSETS, OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
