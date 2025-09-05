@@ -29,8 +29,6 @@ public class Drink_all_you_canItems {
                     ConsumableComponents.food()
                             .sound(SoundEvents.ENTITY_GENERIC_DRINK)
                             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(Drink_all_you_canEffects.RED_COW_ENERGY_EFFECT, 20*30, 0), 1.0F))
-                            //.consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20*15, 4),1.0F))
-                            //.consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20*20, 4),1.0F))
                             .build()
             )
     );
@@ -42,8 +40,9 @@ public class Drink_all_you_canItems {
                             .build(),
                     ConsumableComponents.food()
                             .sound(SoundEvents.ENTITY_GENERIC_DRINK)
-                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1000, 1),1.0F))
-                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.SPEED, 20*5, 2),1.0F))
+//                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1000, 1),1.0F))
+//                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.SPEED, 20*5, 2),1.0F))
+                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(Drink_all_you_canEffects.SMOKER_COLA_EFFECT, 20*61, 0), 1.0F))
                             .build()
             )
     );
