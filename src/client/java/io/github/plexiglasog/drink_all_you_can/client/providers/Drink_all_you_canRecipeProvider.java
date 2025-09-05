@@ -45,7 +45,7 @@ public class Drink_all_you_canRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.RED_MUSHROOM), conditionsFromItem(Drink_all_you_canItems.BLANK_CAN))
                         .offerTo(exporter);
                 //Coca Cola Can
-                createShaped(RecipeCategory.FOOD, Drink_all_you_canItems.COCA_COLA_CAN)
+                createShaped(RecipeCategory.FOOD, Drink_all_you_canItems.SMOKER_COLA_CAN)
                         .pattern("sde")
                         .pattern("aba")
                         .pattern("efs")

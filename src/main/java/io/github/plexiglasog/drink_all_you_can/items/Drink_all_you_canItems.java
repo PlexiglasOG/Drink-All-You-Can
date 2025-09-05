@@ -34,7 +34,7 @@ public class Drink_all_you_canItems {
                             .build()
             )
     );
-    public static final Item COCA_COLA_CAN = register("coca_cola_can",
+    public static final Item SMOKER_COLA_CAN = register("smoker_cola_can",
             CanItem::new,
             new Item.Settings().food(new FoodComponent.Builder()
                             .nutrition(0)

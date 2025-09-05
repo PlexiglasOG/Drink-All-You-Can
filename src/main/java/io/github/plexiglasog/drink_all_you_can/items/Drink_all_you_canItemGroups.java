@@ -11,12 +11,12 @@ import net.minecraft.util.Identifier;
 
 public class Drink_all_you_canItemGroups {
     public static final ItemGroup TEST_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(Drink_all_you_canItems.COCA_COLA_CAN))
+            .icon(() -> new ItemStack(Drink_all_you_canItems.SMOKER_COLA_CAN))
             .displayName(Text.translatable("itemGroup.drink_all_you_can.drink_all_you_can_item_group"))
             .entries((context, entries) -> {
                 entries.add(Drink_all_you_canItems.BLANK_CAN);
                 entries.add(Drink_all_you_canItems.RED_COW_CAN);
-                entries.add(Drink_all_you_canItems.COCA_COLA_CAN);
+                entries.add(Drink_all_you_canItems.SMOKER_COLA_CAN);
             })
             .build();
     public static void initialize(){

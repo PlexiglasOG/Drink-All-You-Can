@@ -5,6 +5,8 @@ import io.github.plexiglasog.drink_all_you_can.effect.Drink_all_you_canEffects;
 import net.minecraft.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Objects;
 
@@ -44,5 +46,13 @@ public class LivingEntityRedCowEnergyEffectMixin {
             return original + (float) modifier;
         }
         return original;
+    }
+
+    @Inject(method = "tickMovement", at = @At("TAIL"))
+    private void limitFallDamage(CallbackInfo ci){
+        LivingEntity self = (LivingEntity)(Object)this;
+        if(self.hasStatusEffect(Drink_all_you_canEffects.RED_COW_ENERGY_EFFECT)){
+            self.onLanding();
+        }
     }
 }
