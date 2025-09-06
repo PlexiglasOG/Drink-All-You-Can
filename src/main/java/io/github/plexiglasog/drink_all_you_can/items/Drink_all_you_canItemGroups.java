@@ -15,8 +15,12 @@ public class Drink_all_you_canItemGroups {
             .displayName(Text.translatable("itemGroup.drink_all_you_can.drink_all_you_can_item_group"))
             .entries((context, entries) -> {
                 entries.add(Drink_all_you_canItems.BLANK_CAN);
+                //Effect Cans
                 entries.add(Drink_all_you_canItems.RED_COW_CAN);
                 entries.add(Drink_all_you_canItems.SMOKER_COLA_CAN);
+                //Effectless Cans
+                entries.add(Drink_all_you_canItems.RED_COW_CAN_EFFECTLESS);
+                entries.add(Drink_all_you_canItems.SMOKER_COLA_CAN_EFFECTLESS);
             })
             .build();
     public static void initialize(){

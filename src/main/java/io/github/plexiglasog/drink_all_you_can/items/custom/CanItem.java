@@ -1,16 +1,24 @@
 package io.github.plexiglasog.drink_all_you_can.items.custom;
 
 import io.github.plexiglasog.drink_all_you_can.items.Drink_all_you_canItems;
+import net.minecraft.component.type.TooltipDisplayComponent;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
+import java.util.function.Consumer;
+
 public class CanItem extends Item {
+
+
     public CanItem(Settings settings){
         super(settings);
     }
+
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {

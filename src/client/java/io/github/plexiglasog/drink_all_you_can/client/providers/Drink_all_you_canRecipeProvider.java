@@ -22,6 +22,26 @@ public class Drink_all_you_canRecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(wrapperLookup, exporter) {
             @Override
             public void generate() {
+                //Shapeless
+                //Red Cow Can Effect exchange
+                createShapeless(RecipeCategory.FOOD, Drink_all_you_canItems.RED_COW_CAN)
+                        .input(Drink_all_you_canItems.RED_COW_CAN_EFFECTLESS)
+                        .criterion(hasItem(Drink_all_you_canItems.RED_COW_CAN_EFFECTLESS), conditionsFromItem(Drink_all_you_canItems.RED_COW_CAN_EFFECTLESS))
+                        .offerTo(exporter, "red_cow_can_effect_exchange_no_to_yes");
+                createShapeless(RecipeCategory.FOOD, Drink_all_you_canItems.RED_COW_CAN_EFFECTLESS)
+                        .input(Drink_all_you_canItems.RED_COW_CAN)
+                        .criterion(hasItem(Drink_all_you_canItems.RED_COW_CAN), conditionsFromItem(Drink_all_you_canItems.RED_COW_CAN))
+                        .offerTo(exporter, "red_cow_can_effect_exchange_yes_to_no");
+                //SMoker Cola Effect Exchange
+                createShapeless(RecipeCategory.FOOD, Drink_all_you_canItems.SMOKER_COLA_CAN)
+                        .input(Drink_all_you_canItems.SMOKER_COLA_CAN_EFFECTLESS)
+                        .criterion(hasItem(Drink_all_you_canItems.SMOKER_COLA_CAN_EFFECTLESS), conditionsFromItem(Drink_all_you_canItems.SMOKER_COLA_CAN_EFFECTLESS))
+                        .offerTo(exporter, "smoker_cola_can_effect_exchange_no_to_yes");
+                createShapeless(RecipeCategory.FOOD, Drink_all_you_canItems.SMOKER_COLA_CAN_EFFECTLESS)
+                        .input(Drink_all_you_canItems.SMOKER_COLA_CAN)
+                        .criterion(hasItem(Drink_all_you_canItems.SMOKER_COLA_CAN), conditionsFromItem(Drink_all_you_canItems.SMOKER_COLA_CAN))
+                        .offerTo(exporter, "smoker_cola_can_effect_exchange_yes_to_no");
+                //Shaped
                 //THE CAN
                 createShaped(RecipeCategory.MISC, Drink_all_you_canItems.BLANK_CAN, 8)
                         .pattern("s")
@@ -39,7 +59,7 @@ public class Drink_all_you_canRecipeProvider extends FabricRecipeProvider {
                         .input('s', Items.RED_DYE)
                         .input('d',Items.RED_MUSHROOM)
                         .input('f',Items.SUGAR)
-                        .input('a', Items.NETHER_WART)
+                        .input('a', Items.LEATHER)
                         .input('b', Drink_all_you_canItems.BLANK_CAN)
                         .input('e', Items.BLUE_DYE)
                         .criterion(hasItem(Items.RED_MUSHROOM), conditionsFromItem(Drink_all_you_canItems.BLANK_CAN))

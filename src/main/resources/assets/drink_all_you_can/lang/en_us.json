@@ -1,7 +1,12 @@
 {
   "item.drink_all_you_can.red_cow_can": "Red Cow Energy Drink",
+  "item.drink_all_you_can.red_cow_can_effectless": "Red Cow Energy Drink",
   "item.drink_all_you_can.smoker_cola_can": "Smoker Cola Can",
+  "item.drink_all_you_can.smoker_cola_can_effectless": "Smoker Cola Can",
   "item.drink_all_you_can.blank_can": "Blank Can",
+
+  "item.drink_all_you_can.can_effectless.tooltip": "(Effectless)",
+
 
   "effect.drink_all_you_can.red_cow_energy_effect": "Red Cow Energy",
   "effect.drink_all_you_can.red_cow_energy_gold_effect": "Red Cow Energy Gold",

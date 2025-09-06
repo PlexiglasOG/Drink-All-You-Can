@@ -10,6 +10,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.SoundEvents;
@@ -19,7 +21,7 @@ import java.util.function.Function;
 
 public class Drink_all_you_canItems {
 
-    //Food
+    //Drinks
     public static final Item RED_COW_CAN = register("red_cow_can",
             CanItem::new,
             new Item.Settings().food(new FoodComponent.Builder()
@@ -32,6 +34,12 @@ public class Drink_all_you_canItems {
                             .build()
             )
     );
+        //Effectless Variant
+    public static final Item RED_COW_CAN_EFFECTLESS = register("red_cow_can_effectless",
+            CanItem::new,
+            new Item.Settings().food(new FoodComponent.Builder().nutrition(0).alwaysEdible().build(),
+                    ConsumableComponents.food().sound(SoundEvents.ENTITY_GENERIC_DRINK).build()));
+
     public static final Item SMOKER_COLA_CAN = register("smoker_cola_can",
             CanItem::new,
             new Item.Settings().food(new FoodComponent.Builder()
@@ -46,6 +54,12 @@ public class Drink_all_you_canItems {
                             .build()
             )
     );
+        //Effectless Variant
+    public static final Item SMOKER_COLA_CAN_EFFECTLESS = register("smoker_cola_can_effectless",
+            CanItem::new,
+            new Item.Settings().food(new FoodComponent.Builder().nutrition(0).alwaysEdible().build(),
+                    ConsumableComponents.food().sound(SoundEvents.ENTITY_GENERIC_DRINK).build()));
+
 
     public static final Item BLANK_CAN = register(
             "blank_can",
