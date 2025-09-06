@@ -1,0 +1,16 @@
+{
+  "item.drink_all_you_can.red_cow_can": "Red Cow Energy Drink",
+  "item.drink_all_you_can.red_cow_can_effectless": "Red Cow Energy Drink",
+  "item.drink_all_you_can.smoker_cola_can": "Smoker Cola",
+  "item.drink_all_you_can.smoker_cola_can_effectless": "Smoker Cola",
+  "item.drink_all_you_can.blank_can": "Unbedruckte Getränkedose",
+
+  "item.drink_all_you_can.can_effectless.tooltip": "(Ohne Effekt)",
+
+
+  "effect.drink_all_you_can.red_cow_energy_effect": "Red Cow Energy",
+  "effect.drink_all_you_can.red_cow_energy_gold_effect": "Red Cow Energy Gold",
+  "effect.drink_all_you_can.smoker_cola_effect": "Smoker Cola (W.I.P.)",
+
+  "itemGroup.drink_all_you_can.drink_all_you_can_item_group": "Drink All You Can"
+}

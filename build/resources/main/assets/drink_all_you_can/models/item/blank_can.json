@@ -1,11 +1,11 @@
 {
 	"format_version": "1.21.6",
-	"credit": "Made with Blockbench",
+	"credit": "Made with Blockbench by PlexiglasOG",
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "drink_all_you_can:item/cans/can_base",
 		"2": "drink_all_you_can:item/cans/blank_can",
-		"particle": "drink_all_you_can:item/particles/coca_cola_drops"
+		"particle": "drink_all_you_can:item/particles/red_cow_drops"
 	},
 	"elements": [
 		{
@@ -767,7 +767,8 @@
 			"translation": [0, 0.5, 0.25]
 		},
 		"firstperson_righthand": {
-			"translation": [-2, 2.75, 1.5],
+			"rotation": [0, -59, 0],
+			"translation": [-2, 3, 1.5],
 			"scale": [2, 2, 2]
 		},
 		"firstperson_lefthand": {
@@ -788,7 +789,7 @@
 			"scale": [4, 4, 4]
 		},
 		"fixed": {
-			"rotation": [-20, 19, 19],
+			"rotation": [-9, 145, 19],
 			"translation": [0.5, 0.5, 0.5],
 			"scale": [4, 4, 4]
 		}
