@@ -6,12 +6,9 @@ import io.github.plexiglasog.drink_all_you_can.items.custom.CanItem;
 import net.minecraft.component.type.ConsumableComponents;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.SoundEvents;
@@ -21,13 +18,15 @@ import java.util.function.Function;
 
 public class Drink_all_you_canItems {
 
+    private static final FoodComponent ZERO_NUTRITION_ALWAYS_EDIBLE_FOODCOMPONENT = new FoodComponent.Builder()
+            .nutrition(0)
+            .alwaysEdible()
+            .build();
+
     //Drinks
     public static final Item RED_COW_CAN = register("red_cow_can",
             CanItem::new,
-            new Item.Settings().food(new FoodComponent.Builder()
-                            .nutrition(0)
-                            .alwaysEdible()
-                            .build(),
+            new Item.Settings().food(ZERO_NUTRITION_ALWAYS_EDIBLE_FOODCOMPONENT,
                     ConsumableComponents.food()
                             .sound(SoundEvents.ENTITY_GENERIC_DRINK)
                             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(Drink_all_you_canEffects.RED_COW_ENERGY_EFFECT, 20*30, 0), 1.0F))
@@ -37,15 +36,12 @@ public class Drink_all_you_canItems {
         //Effectless Variant
     public static final Item RED_COW_CAN_EFFECTLESS = register("red_cow_can_effectless",
             CanItem::new,
-            new Item.Settings().food(new FoodComponent.Builder().nutrition(0).alwaysEdible().build(),
+            new Item.Settings().food(ZERO_NUTRITION_ALWAYS_EDIBLE_FOODCOMPONENT,
                     ConsumableComponents.food().sound(SoundEvents.ENTITY_GENERIC_DRINK).build()));
 
     public static final Item SMOKER_COLA_CAN = register("smoker_cola_can",
             CanItem::new,
-            new Item.Settings().food(new FoodComponent.Builder()
-                            .nutrition(0)
-                            .alwaysEdible()
-                            .build(),
+            new Item.Settings().food(ZERO_NUTRITION_ALWAYS_EDIBLE_FOODCOMPONENT,
                     ConsumableComponents.food()
                             .sound(SoundEvents.ENTITY_GENERIC_DRINK)
 //                            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1000, 1),1.0F))
@@ -57,7 +53,7 @@ public class Drink_all_you_canItems {
         //Effectless Variant
     public static final Item SMOKER_COLA_CAN_EFFECTLESS = register("smoker_cola_can_effectless",
             CanItem::new,
-            new Item.Settings().food(new FoodComponent.Builder().nutrition(0).alwaysEdible().build(),
+            new Item.Settings().food(ZERO_NUTRITION_ALWAYS_EDIBLE_FOODCOMPONENT,
                     ConsumableComponents.food().sound(SoundEvents.ENTITY_GENERIC_DRINK).build()));
 
 
