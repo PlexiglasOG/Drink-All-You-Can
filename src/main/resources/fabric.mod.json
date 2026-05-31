@@ -11,13 +11,13 @@
   "environment": "client",
   "entrypoints": {
     "fabric-datagen": [
-      "io.github.plexiglasog.drink_all_you_can.client.Drink_all_you_canDataGenerator"
+      "io.github.plexiglasog.drink_all_you_can.client.DrinkAllYouCanDataGenerator"
     ],
     "client": [
-      "io.github.plexiglasog.drink_all_you_can.client.Drink_all_you_canClient"
+      "io.github.plexiglasog.drink_all_you_can.client.DrinkAllYouCanClient"
     ],
     "main": [
-      "io.github.plexiglasog.drink_all_you_can.Drink_all_you_can"
+      "io.github.plexiglasog.drink_all_you_can.DrinkAllYouCan"
     ]
   },
   "mixins": [

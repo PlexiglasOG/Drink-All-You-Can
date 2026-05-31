@@ -1,15 +1,13 @@
 package io.github.plexiglasog.drink_all_you_can.effect.custom;
 
-import io.github.plexiglasog.drink_all_you_can.Drink_all_you_can;
+import io.github.plexiglasog.drink_all_you_can.DrinkAllYouCan;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.SmokingRecipe;
@@ -28,7 +26,7 @@ import java.util.Random;
 
 public class SmokerColaEffect extends StatusEffect {
 
-    public static final TagKey<Item> DRINK_ALL_YOU_CAN_RAW_MEAT = TagKey.of(RegistryKeys.ITEM, Identifier.of(Drink_all_you_can.MOD_ID, "drink_all_you_can_raw_meat"));
+    public static final TagKey<Item> DRINK_ALL_YOU_CAN_RAW_MEAT = TagKey.of(RegistryKeys.ITEM, Identifier.of(DrinkAllYouCan.MOD_ID, "drink_all_you_can_raw_meat"));
 
     private final Random random = new Random();
 
@@ -39,7 +37,7 @@ public class SmokerColaEffect extends StatusEffect {
     @Override
     public void onApplied(LivingEntity entity, int amplifier) {
         //Only cook meat in inventory of Player
-        if(entity instanceof PlayerEntity){
+        if (entity instanceof PlayerEntity) {
             //Only run code server-side to avoid Crashing
             if (entity.getWorld() instanceof ServerWorld serverWorld) {
                 //Get all Items from the tag "DRINK_ALL_YOU_CAN_RAW_MEAT"
@@ -57,29 +55,29 @@ public class SmokerColaEffect extends StatusEffect {
                     slotsWithRawMeat.addAll(getSlotsWithItemStack(playerInventory, new ItemStack(item)));
                 }
                 //It not empty there is meat to smoke
-                if(!slotsWithRawMeat.isEmpty()){
+                if (!slotsWithRawMeat.isEmpty()) {
                     //Get a random Slot from the List
-                    int randomSlot = slotsWithRawMeat.get(random.nextInt(0,slotsWithRawMeat.size()));
+                    int randomSlot = slotsWithRawMeat.get(random.nextInt(0, slotsWithRawMeat.size()));
                     //Get the ItemStack in that slot and copy it
                     ItemStack rawMeatStack = playerInventory.getStack(randomSlot);
                     ItemStack rawMeatStackCopy = rawMeatStack.copy();
                     // get its stack size
                     int stackSize = rawMeatStack.getCount();
                     //Take away the amount of meat that corresponds to Effect Level or all of it if Level exceeds stack size
-                    rawMeatStack.decrement(Math.min(amplifier+1, stackSize));
+                    rawMeatStack.decrement(Math.min(amplifier + 1, stackSize));
                     //Insert Meat :>
-                    playerInventory.offerOrDrop(getSmokedVariant(serverWorld, rawMeatStackCopy, Math.min(amplifier+1, stackSize)));
+                    playerInventory.offerOrDrop(getSmokedVariant(serverWorld, rawMeatStackCopy, Math.min(amplifier + 1, stackSize)));
                 }
             }
         }
         super.onApplied(entity, amplifier);
     }
 
-    private List<Integer> getSlotsWithItemStack(PlayerInventory playerInventory, ItemStack itemStack){
+    private List<Integer> getSlotsWithItemStack(PlayerInventory playerInventory, ItemStack itemStack) {
         List<Integer> slotList = new ArrayList<>();
-        for(int i = 0;i < playerInventory.size(); i++ ){
+        for (int i = 0; i < playerInventory.size(); i++) {
             ItemStack current = playerInventory.getStack(i);
-            if(!current.isEmpty() && ItemStack.areItemsAndComponentsEqual(itemStack, current)){
+            if (!current.isEmpty() && ItemStack.areItemsAndComponentsEqual(itemStack, current)) {
                 slotList.add(i);
             }
         }
@@ -101,10 +99,12 @@ public class SmokerColaEffect extends StatusEffect {
             ItemStack output = recipe.craft(recipeInput, world.getRegistryManager());
             //Return amount of smoked meat based on size
             //Don't allow counts bigger than 64
-            if(returnCount>input.getMaxCount()){returnCount = input.getMaxCount();}
+            if (returnCount > input.getMaxCount()) {
+                returnCount = input.getMaxCount();
+            }
             //Set Count of Items in Stacks to return count
             output.setCount(returnCount);
-            return  output;
+            return output;
         }
 
         return ItemStack.EMPTY;

@@ -1,4 +1,4 @@
-// 1.21.8	-999999999-01-01T00:00:00	Drink All You Can/Drink_all_you_canRecipeProvider
+// 1.21.8	-999999999-01-01T00:00:00	Drink All You Can/DrinkAllYouCanRecipeProvider
 493e67cf7ab8f2a15d8b302ccb0e2f3d1447c8c9 data/drink_all_you_can/advancement/recipes/food/red_cow_can.json
 8975efed6cbc04791c1c0a76dae2e229fe519ef2 data/drink_all_you_can/advancement/recipes/food/red_cow_can_effect_exchange_no_to_yes.json
 dd2e67326f36023d33ffd01197e1893b6a1754e0 data/drink_all_you_can/advancement/recipes/food/red_cow_can_effect_exchange_yes_to_no.json

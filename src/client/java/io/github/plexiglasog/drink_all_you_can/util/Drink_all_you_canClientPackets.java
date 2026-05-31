@@ -1,14 +1,8 @@
 package io.github.plexiglasog.drink_all_you_can.util;
 
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
+public class DrinkAllYouCanClientPackets {
 
-public class Drink_all_you_canClientPackets {
-
-    public static void initialize(){
+    public static void initialize() {
 //        ClientPlayNetworking.registerGlobalReceiver(EffectGivenThroughAnotherPayload.ID, (payload, context) -> {
 //            MinecraftClient client = context.client();
 //            client.execute(() -> {

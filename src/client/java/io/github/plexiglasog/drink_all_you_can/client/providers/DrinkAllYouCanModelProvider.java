@@ -5,8 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 
-public class Drink_all_you_canModelProvider extends FabricModelProvider {
-    public Drink_all_you_canModelProvider(FabricDataOutput output) {
+public class DrinkAllYouCanModelProvider extends FabricModelProvider {
+    public DrinkAllYouCanModelProvider(FabricDataOutput output) {
         super(output);
     }
 
