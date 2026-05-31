@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "drink_all_you_can:smoker_cola_can_effectless"
+  ],
+  "result": {
+    "count": 1,
+    "id": "drink_all_you_can:smoker_cola_can"
+  }
+}

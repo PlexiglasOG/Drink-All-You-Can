@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_cow_can_effectless": {
+      "conditions": {
+        "items": [
+          {
+            "items": "drink_all_you_can:red_cow_can_effectless"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "drink_all_you_can:red_cow_can_effect_exchange_no_to_yes"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_red_cow_can_effectless"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "drink_all_you_can:red_cow_can_effect_exchange_no_to_yes"
+    ]
+  }
+}

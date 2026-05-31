@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "drink_all_you_can:red_cow_can"
+  ],
+  "result": {
+    "count": 1,
+    "id": "drink_all_you_can:red_cow_can_effectless"
+  }
+}

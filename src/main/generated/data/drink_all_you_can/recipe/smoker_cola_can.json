@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": "minecraft:charcoal",
+    "b": "drink_all_you_can:blank_can",
+    "d": "minecraft:smoker",
+    "f": "minecraft:sugar",
+    "s": "minecraft:red_dye"
+  },
+  "pattern": [
+    "sds",
+    "aba",
+    "sfs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "drink_all_you_can:smoker_cola_can"
+  }
+}

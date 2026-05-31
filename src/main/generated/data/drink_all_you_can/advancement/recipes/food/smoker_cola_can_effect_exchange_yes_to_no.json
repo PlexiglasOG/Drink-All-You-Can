@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_smoker_cola_can": {
+      "conditions": {
+        "items": [
+          {
+            "items": "drink_all_you_can:smoker_cola_can"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "drink_all_you_can:smoker_cola_can_effect_exchange_yes_to_no"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_smoker_cola_can"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "drink_all_you_can:smoker_cola_can_effect_exchange_yes_to_no"
+    ]
+  }
+}
